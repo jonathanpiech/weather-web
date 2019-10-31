@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Humidity</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+
+<body>
+   <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-dark">
+        <a class="navbar-brand text-warning" href="index.html">LATITUDE VIZ</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainBar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainBar">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true">
+                    Plots
+                    </a>
+                    <div class="dropdown-menu bg-dark border-0">
+                    <a class="dropdown-item text-light" href="cloudiness.html">Cloudiness</a>
+                    <a class="dropdown-item text-light" href="humidity.html">Humidity</a>
+                    <a class="dropdown-item text-light" href="temperature.html">Max Temperature</a>
+                    <a class="dropdown-item text-light" href="wind.html">Wind Speed</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="comparison.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="data.html">Data</a>
+                </li>
+            </ul>
+        </div>
+    </nav> 
+
+    <br>
+
+    <div class="container rounded bg-dark">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="card text-light bg-dark mb-3 border-0">
+                    <div class="card-body">
+                        <img class="card-img-top mb-3 rounded" src="assets/hvl.png" alt="Humidity vs. Latitude Relationship">
+                        <h2 class="card-title text-warning">Humidity</h2>
+                        <p>The graph shows more high humidity cities than low humidity cities. One factor in this observation could be the time of the year the data was taken. The scattering of data also shows that there does not seem to be a correlation between humidity and latitude.</p>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="col-lg-4">
+                <div class="card text-light bg-dark border-0">
+                    <div class="card-body mb-n3">
+                        <h3 class="card-title text-warning">Visualizations</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card-body">
+                                <a href="cloudiness.html">
+                                    <img class="card-img-top rounded" src="assets/cvl.png" alt="Cloudiness">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card-body border border-warning mx-1">
+                                <a href="humidity.html">
+                                    <img class="card-img-top rounded" src="assets/hvl.png" alt="Humidity">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card-body">
+                                <a href="temperature.html">
+                                    <img class="card-img-top rounded" src="assets/tvl.png" alt="Max Temperature">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card-body">
+                                <a href="wind.html">
+                                    <img class="card-img-top rounded" src="assets/wsvl.png" alt="Wind Speed">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
